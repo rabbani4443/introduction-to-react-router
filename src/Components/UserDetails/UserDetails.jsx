@@ -1,11 +1,17 @@
 
 
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const UserDetails = () => {
 
     const user = useLoaderData();
     const {id,name,email,phone,website,address} = user;
+
+    const navigate = useNavigate()
+
+    const handelBack=()=>{
+        navigate(-1)
+    }
 
     return (
         <div>
@@ -22,6 +28,7 @@ const UserDetails = () => {
                 <p className="" >    City: {address.city} </p>
                 <p className="" >    Zipcode: {address.zipcode} </p>
                 </div>
+                <button onClick={handelBack} className="btn"> Back </button>
             </div>
         </div>
     );
