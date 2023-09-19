@@ -7,18 +7,14 @@ const Header = () => {
         <div>
             <h1 className="text-2xl fot-bold font-semibold"> Navbar </h1>
             <nav className="py-5">
-             <span className="text-xl font-semibold pl-5">
-             <Link to= '/'>Home</Link>
-            </span>   
-             <span className="text-xl font-semibold pl-5">
-             <Link to= '/about'>About</Link>
-            </span>   
-             <span className="text-xl font-semibold pl-5">
-             <Link to= '/contact'>Contact</Link>
-            </span>   
-             <span className="text-xl font-semibold pl-5">
-                <Link to="/users" > Users </Link>
-            </span>   
+
+            <Link to="/ " ><span className="text-xl font-semibold pl-5"> Home </span> </Link>
+            <Link to="/about" ><span className="text-xl font-semibold pl-5"> About </span> </Link>
+            <Link to="/contact" ><span className="text-xl font-semibold pl-5"> Contact </span> </Link>
+            <Link to="/users" ><span className="text-xl font-semibold pl-5"> Users </span> </Link>
+            <Link to="/posts" ><span className="text-xl font-semibold pl-5"> Posts </span> </Link>
+
+
 
             {/* <a className="text-xl font-semibold pl-5" href="/">Home</a>
             <a className="text-xl font-semibold pl-5" href="/about">About</a>
